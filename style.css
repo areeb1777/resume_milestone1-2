@@ -1,0 +1,159 @@
+/* Reset basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playwrite GB S", cursive;
+  background-color: #1a1a1d;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the entire resume */
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: #5d4d9d;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Card Style for each section */
+.card {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Profile Picture and Personal Info */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #00bfa6;
+}
+
+.name {
+  font-size: 2.5rem;
+  color: #333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contact {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.8rem;
+  color: #00bfa6;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.section-title-p-2 {
+  margin-top: 10px;
+}
+
+/* Skills List */
+.skills-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.skills-list li {
+  background-color: #00bfa6;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Toggle Button */
+.toggle-button {
+  background-color: #00bfa6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.toggle-button:hover {
+  background-color: #007f6d;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .toggle-button {
+    font-size: 1rem;
+  }
+}
