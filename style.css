@@ -20,7 +20,7 @@ body {
   max-width: 800px;
   width: 100%;
   padding: 20px;
-  background-color: #5d4d9d;
+  background: linear-gradient(135deg, #1f4037 0%, #99f2c8 100%);
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1.5s ease-in-out;
@@ -83,10 +83,18 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
 
-.section-title-p-2 {
-  margin-top: 10px;
+.section-title:hover {
+  color: #ff5722; /* Change color on hover */
+  transform: scale(1.02); /* Slightly increase size on hover */
+}
+
+
+.education {
+  margin-top: 12px;
 }
 
 /* Skills List */
@@ -155,6 +163,10 @@ body {
 
   .name {
     font-size: 2rem;
+  }
+
+  .contact {
+    font-size: 0.7rem;
   }
 
   .section-title {
