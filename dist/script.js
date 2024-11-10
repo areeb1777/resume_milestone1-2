@@ -15,7 +15,6 @@ export const myFunction = () => {
         console.error("Button or Skills section not found");
     }
 };
-// Call myFunction after DOM is fully loaded
 window.addEventListener("DOMContentLoaded", () => {
     myFunction();
 });

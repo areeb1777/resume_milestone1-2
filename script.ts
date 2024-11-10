@@ -15,7 +15,6 @@ export const myFunction = () => {
   }
 };
 
-// Call myFunction after DOM is fully loaded
 window.addEventListener("DOMContentLoaded", () => {
   myFunction();
 });
