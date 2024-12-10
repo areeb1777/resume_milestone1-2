@@ -43,7 +43,6 @@ body {
   margin-bottom: 20px;
 }
 
-
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -91,7 +90,6 @@ body {
   color: #ff5722; /* Change color on hover */
   transform: scale(1.02); /* Slightly increase size on hover */
 }
-
 
 .education {
   margin-top: 12px;
